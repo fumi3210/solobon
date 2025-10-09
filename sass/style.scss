@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+$font-jp: 'Noto Sans JP', sans-serif;
+$font-en: 'Montserrat', sans-serif;
+$width-inner: 1140px;
+$breakpoints: (
+  sp: "screen and (max-width: 767px)",
+  pc: "screen and (min-width: 768px)",
+);
+
+@mixin mq($breakpoint: pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+.is-pc{
+    @include mq(pc) {
+    display: none;
+  }
+
+}
+.is-sp{
+    @include mq(sp) {
+    display: none;
+  }
+
+}
