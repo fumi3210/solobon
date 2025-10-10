@@ -28,20 +28,72 @@ $breakpoints: (
   }
 
 }
+.inner{
+padding-inline: 15px;
+}
 // header
 .header{
 
 }
 .header_inner {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 19px 15px 15px;
 
 }
 .header_logo{
-    img{
+img{
+    width: 120px;
+    display: block;
 
-    }
+}
+}
+.header_nav{
+display: none;
+@include mq(pc) {
+    display: block;
+}
+
+}
+.header_link{
+
 }
 // ドロワー
+.drawer_icon{
+position: relative;
+width: 36px;
+height: 21px;
+z-index: 51;
+
+
+
+}
+.drawer_icon-bar{
+transition: transform 0.3s linear, top 0.3s linear;
+position: absolute;
+top: 0;
+left: 0;
+width: 36px;
+height: 3px;
+background:#3EA1D1;
+&:nth-of-type(1){
+top: 0;
+
+}
+&:nth-of-type(2){
+top: 8px;
+
+}
+&:nth-of-type(3){
+top: 16px;
+
+}
+
+
+}
 .drawer_contens{
+display: none;
 
 }
 .drawer_content-menu{
@@ -58,6 +110,7 @@ $breakpoints: (
 
 }
 .fv_img{
+
 img{
 
 }
@@ -66,9 +119,20 @@ img{
 
 }
 .fv_contens-title{
+font-weight: 600;
+font-size: 26px;
+line-height: 1.7;
+color: #333333;
+
 
 }
 .fv_text{
-    
+margin-top: 16px;
+font-weight: 300;
+font-size: 16px;
+line-height: 1.7;
+color:#333333 ;
+@include mq(pc) {
+}
 }
 
