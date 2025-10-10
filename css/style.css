@@ -40,11 +40,25 @@ html, body {
   }
 }
 
+.header_link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.header_link + .header_link {
+  margin-left: 46px;
+}
+
 .drawer_icon {
   position: relative;
   width: 36px;
   height: 21px;
   z-index: 51;
+}
+@media screen and (min-width: 768px) {
+  .drawer_icon {
+    display: none;
+  }
 }
 
 .drawer_icon-bar {
@@ -68,6 +82,12 @@ html, body {
 
 .drawer_contens {
   display: none;
+}
+
+.fv_inner {
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fv_contens-title {

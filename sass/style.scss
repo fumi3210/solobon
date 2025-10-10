@@ -57,6 +57,13 @@ display: none;
 
 }
 .header_link{
+font-weight: 300;
+font-size: 16px;
+line-height: 1.7;
+&+&{
+margin-left: 46px;
+
+}
 
 }
 // ドロワー
@@ -65,6 +72,9 @@ position: relative;
 width: 36px;
 height: 21px;
 z-index: 51;
+@include mq(pc) {
+display: none;
+}
 
 
 
@@ -107,12 +117,13 @@ display: none;
 
 }
 .fv_inner {
+ max-width: 990px;
+ margin-left: auto;
+ margin-right: auto;
 
 }
 .fv_img{
-
 img{
-
 }
 }
 .fv_contens{
@@ -133,6 +144,7 @@ font-size: 16px;
 line-height: 1.7;
 color:#333333 ;
 @include mq(pc) {
+    
 }
 }
 
