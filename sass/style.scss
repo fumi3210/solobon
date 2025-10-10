@@ -30,6 +30,9 @@ $breakpoints: (
 }
 .inner{
 padding-inline: 15px;
+@include mq(pc) {
+padding-inline: 40px;
+}
 }
 // header
 .header{
@@ -119,7 +122,7 @@ display: none;
 .fv_inner {
  max-width: 990px;
  margin-left: auto;
- margin-right: auto;
+ position: relative;
 
 }
 .fv_img{
@@ -127,14 +130,30 @@ img{
 }
 }
 .fv_contens{
+@include mq(pc) {
+position: absolute;
+content: "";
+margin-inline:block ;
+top: 50%;
+left:-15%;
+transform: translateY(-50%);
+background: #ffff;
+padding: 80px 39px  80px ;
+    }
 
 }
 .fv_contens-title{
 font-weight: 600;
 font-size: 26px;
 line-height: 1.7;
+margin-top: 30px;
 color: #333333;
+@include mq(pc) {
+font-weight: 600;
+font-size: 26px;
+line-height: 1.7;
 
+}
 
 }
 .fv_text{
@@ -144,7 +163,7 @@ font-size: 16px;
 line-height: 1.7;
 color:#333333 ;
 @include mq(pc) {
-    
+
 }
 }
 
