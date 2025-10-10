@@ -140,4 +140,32 @@ html, body {
   font-weight: 600;
   font-size: 30px;
   line-height: 1;
+}
+
+.concept_contens {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.concept_img {
+  margin-top: 46px;
+}
+.concept_img img {
+  width: 345px;
+  display: block;
+}
+
+.concept_contens-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  margin-top: 34px;
+}
+
+.concept_contens-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 22px;
 }/*# sourceMappingURL=style.css.map */

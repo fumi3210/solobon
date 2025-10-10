@@ -168,10 +168,11 @@ color:#333333 ;
 }
 //concept
 .concept{
-    padding: 96px 0 96px;
+padding: 96px 0 96px;
 
 }
 .concept_inner{
+
 
 }
 .concept_title{
@@ -184,19 +185,35 @@ line-height: 1;
 
 }
 .concept_contens{
+display: flex;
+flex-direction: column;
+gap:34px ;
 
 }
 .concept_img{
-    img{
+margin-top: 46px;
+img{
+    width: 345px;
+    display: block;
 
-    }
+}
 }
 .concept_message{
 
+
 }
 .concept_contens-title{
+font-weight: 600;
+font-size: 20px;
+line-height: 1;
+margin-top: 34px;
+
 
 }
 .concept_contens-text{
+font-weight: 300;
+font-size: 16px;
+line-height: 1.7;
+margin-top: 22px;
 
 }
