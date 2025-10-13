@@ -433,3 +433,45 @@ html, body {
 .concept_2 {
   padding: 90px 0;
 }
+
+.concept2_title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.concept2_contens {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .concept2_contens {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 80px;
+  }
+}
+
+.concept2_contens-text {
+  font-family: Noto Serif JP;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 22px;
+  color: #333333;
+}
+@media screen and (min-width: 768px) {
+  .concept2_contens-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+
+.concept2_img {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .concept2_img img {
+    width: 600px;
+  }
+}

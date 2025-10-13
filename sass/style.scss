@@ -506,26 +506,56 @@ color: #989898;
 }
 // concept_2
 .concept_2{
-  padding: 90px 0 ;
+  padding: 90px 0;
 
 }
 .concept_2-inner{
 
 }
-.concept_2{
-
-}
-.concept2_inner{
-
-}
 .concept2_title{
+font-weight: 600;
+font-size: 20px;
+line-height: 1.7;
+
 
 }
 .concept2_contens{
+display: flex;
+  @include mq(pc) {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 80px;
+  }
+
+}
+.concept2_message{
+  
+ 
+
+}
+.concept2_contens-text{
+font-family: Noto Serif JP;
+font-weight: 300;
+font-size: 14px;
+line-height: 1.7;
+margin-top: 22px;
+color: #333333;
+@include mq(pc) {
+font-weight: 300;
+font-size: 16px;
+line-height: 1.7;
+
+}
 
 }
 .concept2_img{
+  text-align: center;
+  @include mq(pc) {
+  }
   img{
+    @include mq(pc) {
+      width:600px ;
+    }
 
   }
 }
