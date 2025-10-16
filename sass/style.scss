@@ -338,7 +338,6 @@ position: relative;
   margin-top: 26px;
   @include mq(pc) {
 font-weight: bold;
-
 line-height: 170%;
 letter-spacing: 0%;
 text-align: center;
@@ -347,6 +346,101 @@ text-align: center;
   
 
 }
+// News
+.news{
+  padding: 96px 0 96px ;
+  background: #fff;
+
+}
+.news-inner{
+
+}
+.news-head{
+text-align: center;
+font-weight: 600;
+font-size: 30px;
+line-height: 1;
+position: relative;
+&::after{
+  position: absolute;
+  content: "";
+  margin-top: 24px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3EA1D1;
+  width: 60px;
+  height: 1px;
+}
+
+
+}
+.news-list{
+  margin-top:48px;
+
+}
+.news-contents{
+margin-top: 58px;
+padding-bottom:28px ;
+}
+.news-link{
+  display: block;     // ←これが重要！
+  border-bottom: solid 1px #E0E0E0;
+
+}
+.news-lists{
+
+}
+.news-img{
+img{
+  width: 345px;
+
+}
+}
+.news-day{
+font-weight: 300;
+font-size: 14px;
+line-height: 1.7;
+margin-top: 16px;
+@include mq(pc) {
+
+}
+}
+.news-title{
+font-weight: 600;
+font-size: 16px;
+line-height: 1.7;
+  margin-top: 10px;
+@include mq(pc) {
+}
+
+
+}
+.news-text{
+font-weight: 300;
+font-size: 14px;
+line-height: 1.7;
+margin-top: 14px;
+color: #888888;
+@include mq(pc) {
+}
+
+
+}
+.news-button{
+  text-align: center;
+  margin-top: 42px;
+  @include mq(pc) {
+  }
+  a{
+  display:inline-block ;
+  border: solid 1px #3EA1D1;
+  padding:12px 57px ;
+  color:#3EA1D1;
+
+  }
+}
+
 // cta
 .cta{
   padding-top: 96px;
@@ -463,7 +557,7 @@ gap: 46px;
 
 }
 .products_contens{
-  margin-left: 40px;
+  margin-left: 0;
   @include mq(pc) {
     margin-left: 0;
   }
@@ -472,7 +566,7 @@ gap: 46px;
 .products_img{
 text-align: center;
 img{
-width: 263px;
+width: 345px;
 }
 }
 .products_text{
