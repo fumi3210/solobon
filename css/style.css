@@ -289,7 +289,6 @@ html, body {
   padding: 96px 0 96px;
   background: #fff;
 }
-
 .news-head {
   text-align: center;
   font-weight: 600;
@@ -311,18 +310,20 @@ html, body {
 
 .news-list {
   margin-top: 48px;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0%;
 }
-
 .news-contents {
-  margin-top: 58px;
+  margin-top: 28px;
   padding-bottom: 28px;
 }
-
 .news-link {
   display: block;
   border-bottom: solid 1px #E0E0E0;
 }
-
 .news-img img {
   width: 345px;
 }

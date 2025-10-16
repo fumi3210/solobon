@@ -350,6 +350,8 @@ text-align: center;
 .news{
   padding: 96px 0 96px ;
   background: #fff;
+  @include mq(pc) {
+  }
 
 }
 .news-inner{
@@ -376,16 +378,28 @@ position: relative;
 
 }
 .news-list{
-  margin-top:48px;
+margin-top:48px;
+font-weight: 300;
+font-style: Light;
+font-size: 14px;
+line-height: 170%;
+letter-spacing: 0%;
+@include mq(pc) {
+}
+
 
 }
 .news-contents{
-margin-top: 58px;
+margin-top: 28px;
 padding-bottom:28px ;
+@include mq(pc) {
+}
 }
 .news-link{
   display: block;     // ←これが重要！
   border-bottom: solid 1px #E0E0E0;
+  @include mq(pc) {
+  }
 
 }
 .news-lists{
