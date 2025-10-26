@@ -114,42 +114,42 @@
 
 <!-- News -->
 <section class="news">
-<div class="news-inner inner">
-<h2 class="news-head">News</h2>
+  <div class="news-inner inner">
+    <h2 class="news-head">News</h2>
+
     <div class="news-list">
-       <a href="#" class="news-lists news-link">
-        <div class="news-contents">
-          <div class="news-img">
-            <img src="./img/News-01.png" alt="ニュース画像1">
-          </div>
+      <a href="#" class="news-link">
+        <div class="news-img">
+          <img src="./img/News-01.png" alt="ニュース画像1">
+        </div>
+        <div class="news-body">
           <div class="news-day">2020年2月4日</div>
           <h3 class="news-title">き業展終了！次回は2/11(火)フェスタ出店します。</h3>
-          <p class="news-text">「き業展」2日目！大盛況に終わりました\( ˆoˆ )/来てくださったみなさん本当にありがとうございました！やっぱり、地元多治見での出店はみ…</p>
+          <p class="news-text">「き業展」2日目！大盛況に終わりました\( ˆoˆ )/…</p>
         </div>
       </a>
 
-      <a href="#" class="news-lists news-link">
-        <div class="news-contents">
-          <div class="news-img">
-            <img src="./img/News-02.png" alt="ニュース画像2">
-          </div>
+      <a href="#" class="news-link">
+        <div class="news-img">
+          <img src="./img/News-02.png" alt="ニュース画像2">
+        </div>
+        <div class="news-body">
           <div class="news-day">2020年1月20日</div>
-          <h3 class="news-title">“可愛い” で 地球を守る！ 海洋マイクロプラスチックを使ったハンドメイドアクセサリー屋さん 【sobolon】</h3>
-          <p class="news-text">こんにちは！私は、「 “可愛い” で地球を守る！」をテーマに、昨今、環境問題として話題になっている、マイクロプラスチックを使ったアクセサリー…</p>
+          <h3 class="news-title">“可愛い” で 地球を守る！</h3>
+          <p class="news-text">こんにちは！私は、「“可愛い”で地球を守る！」をテーマに…</p>
         </div>
       </a>
 
-      <a href="#" class="news-lists news-link">
-        <div class="news-contents">
-          <div class="news-lists news-img">
-            <img src="./img/News-03.png" alt="ニュース画像3">
-          </div>
+      <a href="#" class="news-link">
+        <div class="news-img">
+          <img src="./img/News-03.png" alt="ニュース画像3">
+        </div>
+        <div class="news-body">
           <div class="news-day">2020年1月20日</div>
           <h3 class="news-title">sobolonの矛盾</h3>
-          <p class="news-text">こんにちは！“可愛い”で 地球を守る！マイクロプラ<br/>スチックアクセサリー【 sobolon 】のリーダーひなこです！sobolonを知らない…</p>
+          <p class="news-text">こんにちは！“可愛い”で 地球を守る！…</p>
         </div>
       </a>
-
     </div>
 
     <div class="news-button">
@@ -201,7 +201,95 @@
     </div>
   </div>
 </section>
+ <!-- contact -->
+  <section class="contact">
+    <div class="contact_inner innner">
+    <h2 class="contact_title">Contact</h2>
+    <p class="contact_text">
+        <span class="form_filed-tag">*</span>は入力必m須項目です
+    </p>
+    <form class="contact_form">
+        <div class="contact_fileds">
+            
+            <div class="contact_filed">
+                <div class="form_filed-head">
+                    <label for="your-name" class="form_filed-label">
+                         お名前
+                        <span class="form_filed-tag">*</span>
+                       
+                    </label>
+                </div>
+                <!-- お名前-->
+                <div class="form_filed-item">
+                    <input type="text" name="name" id="your-name" required>
+                </div>
+            </div>
+             <!-- メールアドレス -->
+            <div class="contact_filed">
+                <div class="form_filed-head">
+                    <label for="your-name" class="form_filed-label">
+                            メールアドレス
+                        <span class="form_filed-tag">*</span>
+                    
+                    </label>
+                </div>
+                <div class="form_filed-item">
+                    <input type="text" name="name" id="your-name" required>
+                </div>
+            </div>
+           <!-- ラジオ -->
+             <div class="form_filed-head">
+                    <label for="your-name" class="form_filed-label">
+                        法人/個人の選択<span class="form_filed-tag">*</span>
+                        
+                    </label>
+                </div>
+                <div class="form_filed-radios">
+                <label class="form_filed-radio">
+                <input type="radio">
+               
+                <span class="form_filed-radio-text">法人</span>
+                </label>
+                <label class="form_filed-radio">
+                <input type="radio">
+               
+                <span class="form_filed-radio-text">個人</span>
+                </label>
 
+
+        </div>
+             <!-- お問合せ内容-->
+        <div class="contact_filed">
+                <div class="form_filed-head">
+                    <label for="your-name" class="form_filed-label">
+                            お問い合わせ内容
+                        <span class="form_filed-tag">*</span>
+                    
+                    </label>
+                </div>
+                <div class="form_filed-item">
+                    <textarea></textarea>
+                </div>
+            </div>
+            <!-- プライバシーポリシー -->
+       <div class="contact_privacy">
+        <label class="form_checkbox">
+        <input type="checkbox" name="privacy" class="form_check-box-input">
+        <span class="form_check-box-text"><a href="" target="_blank">
+            プライバシーポリシー</a>に同意する</span>
+        </label>
+        </div>
+         <!-- 送信ボタン -->
+        <div class="contact_button">
+          <button type="submit"><a href="">送信する</a></button>
+        </div>
+
+
+
+
+    </form>
+</div>
+</section>
 <!-- footer -->
  <div class="footer">
 <div class="footer_inner inner">
