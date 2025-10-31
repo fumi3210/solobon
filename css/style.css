@@ -580,6 +580,84 @@ html, body {
   }
 }
 
+.contact {
+  background: url(../img/contact_01.png) no-repeat center center/cover;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.contact_title {
+  text-align: center;
+  margin-top: 56px;
+  color: #3EA1D1;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1;
+  position: relative;
+}
+.contact_title::after {
+  position: absolute;
+  content: "";
+  margin-top: 24px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3EA1D1;
+  width: 60px;
+  height: 1px;
+}
+
+.contact_text {
+  margin-top: 46px;
+  text-align: center;
+}
+
+.form_filed-tag {
+  color: #E7728E;
+}
+
+.contact_filed {
+  margin-top: 36px;
+}
+
+.form_filed-label {
+  font-family: Noto Serif JP;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  padding: 4px 16px;
+  background: #3EA1D1;
+}
+
+.form_filed-item [type=email] {
+  width: 345px;
+  height: 40px;
+}
+.form_filed-item [type=text] {
+  width: 345px;
+  height: 40px;
+}
+.form_filed-item textarea {
+  width: 345px;
+  height: 122px;
+  resize: vertical;
+}
+
+.contact_privacy {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.contact_button {
+  margin-top: 23px;
+  text-align: center;
+}
 .footer {
   background: #F7F7F7;
   padding-top: 40px;
