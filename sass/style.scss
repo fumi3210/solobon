@@ -740,6 +740,7 @@ padding: 4px 16px ;
         width: 345px;
          height: 40px;
 
+
   }
   
 textarea{
@@ -748,16 +749,82 @@ textarea{
   resize: vertical;
 
 }
+[type ="radio"]{
+    width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+
+  &:checked + .form_filed-radio-text {
+    background-color: #3EA1D1; // 選択時の背景
+    color: #fff; // テキストを白に
+    border-color: #3EA1D1;
+  }
+
+
+
+}
 }
 // ラジオ
-.form_filed-radios{
-
+.form_filed-radios {
+  display: flex;
+  margin-top:5px;
+  gap: 0; // 横の余白をなくす
 }
-.form_filed-radio{
 
+.form_filed-radio {
+  position: relative;
+
+  // 左右の角丸を調整して自然な見た目に
+  &:first-child .form_filed-radio-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &:last-child .form_filed-radio-text {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none; // 枠線の重なり防止
+  }
 }
-.form_filed-radio-text{
 
+.form_filed-radio-text {
+  font-family: "Noto Serif JP";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.16%;
+  text-align: center;
+  vertical-align: middle;
+  color: #3EA1D1;
+  background-color: #fff; // 初期は白背景
+  border: 1px solid #3EA1D1;
+  border-radius: 4px;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+// ラジオボタンの見た目を非表示
+[type="radio"] {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+
+  // チェック時のデザイン
+  &:checked + .form_filed-radio-text {
+    background-color: #3EA1D1;
+    color: #fff;
+    border-color: #3EA1D1;
+  }
 }
 // プライバシーポリシー
 .contact_privacy{

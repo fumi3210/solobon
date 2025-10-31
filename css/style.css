@@ -648,6 +648,71 @@ html, body {
   height: 122px;
   resize: vertical;
 }
+.form_filed-item [type=radio] {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+.form_filed-item [type=radio]:checked + .form_filed-radio-text {
+  background-color: #3EA1D1;
+  color: #fff;
+  border-color: #3EA1D1;
+}
+
+.form_filed-radios {
+  display: flex;
+  margin-top: 5px;
+  gap: 0;
+}
+
+.form_filed-radio {
+  position: relative;
+}
+.form_filed-radio:first-child .form_filed-radio-text {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form_filed-radio:last-child .form_filed-radio-text {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+}
+
+.form_filed-radio-text {
+  font-family: "Noto Serif JP";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.16%;
+  text-align: center;
+  vertical-align: middle;
+  color: #3EA1D1;
+  background-color: #fff;
+  border: 1px solid #3EA1D1;
+  border-radius: 4px;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.form_filed-radio-text:hover {
+  opacity: 0.9;
+}
+
+[type=radio] {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+[type=radio]:checked + .form_filed-radio-text {
+  background-color: #3EA1D1;
+  color: #fff;
+  border-color: #3EA1D1;
+}
 
 .contact_privacy {
   text-align: center;
