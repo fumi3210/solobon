@@ -668,6 +668,11 @@ line-height: 1.7;
 
 }
 .contact_inner{
+  @include mq(pc) {
+    max-width: 510px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }
 .contact_title{
@@ -704,26 +709,49 @@ position: relative;
 
 }
 .contact_fileds{
+  
 
 }
 .contact_filed{
   margin-top: 36px;
+  @include mq(pc) {
+  gap: 10px;
+display: flex;
+  align-items: center;
+  }
+  
 
 }
 .form_filed-head{
+  @include mq(pc) {
+  /* この幅を、すべてのフィールドで統一されるように固定値に調整します */
+        width: calc(180px - 20px  );
+        /* 縮まないように */
+        flex-shrink: 0; 
+        /* ラベルテキストを右端に寄せる設定 */
+        justify-content: flex-end;
+
+    }
+
 
 }
 .form_filed-label{
   font-family: Noto Serif JP;
 font-weight: 600;
 font-size: 14px;
+display: block;
 line-height: 170%;
 letter-spacing: 0%;
 text-align: center;
 color: #fff;
-vertical-align: middle;
 padding: 4px 16px ;
   background: #3EA1D1;
+  @include mq(pc) {
+    padding: 5px 19px ;
+
+    
+
+  }
 
 }
 .form_filed-tag{
@@ -731,6 +759,7 @@ padding: 4px 16px ;
 }
 // input
 .form_filed-item{
+      flex-grow: 1;
   [type ="email"]{
     width: 345px;
     height: 40px;
@@ -771,6 +800,8 @@ textarea{
   display: flex;
   margin-top:5px;
   gap: 0; // 横の余白をなくす
+  @include mq(pc) {
+  }
 }
 
 .form_filed-radio {
@@ -836,9 +867,56 @@ textarea{
 
 }
 .form_check-box-input{
+width: 1px;
+height: 1px;
+position: absolute;
+clip:rect(0,0,0,0);
+overflow: hidden;
+&:checked{
++.form_check-box-text{
+&::after{
+opacity: 1;
+}
+}
+}
+
+  
 
 }
 .form_check-box-text{
+  font-size: 14px;
+padding-left: 30px;
+position: relative;
+&::before,
+&::after{
+position: absolute;
+content: "";
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+}
+&::before{
+width: 24px;
+height: 24px;
+border-radius: 1px ;
+border: 1px solid #111;
+}
+&::after{
+left: -1px;
+margin-top: -1.2px;
+width: 20px;
+height: 17.53px;
+background:url(../img/icon.png)
+no-repeat center center /contain;
+opacity: 0;
+
+}
+a{
+  color:#3EA1D1 ;
+  font-size: 16px;
+
+}
+
 
 }
 //送信ボタン
@@ -846,6 +924,15 @@ textarea{
   margin-top: 23px;
   text-align: center;
   a{
+    display: inline-block;
+    background: #fff;
+    padding: 12px 64px;
+    color: #3EA1D1;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.7;
+    border: solid 1px #333333;
+
 
   }
 }
